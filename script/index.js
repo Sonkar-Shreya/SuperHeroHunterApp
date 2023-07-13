@@ -6,8 +6,11 @@ character:
 // const privateKey = "13a5152a4108d079ad83ae4e766e26415557ba3b";
 // const publicKey = "6b415ae7675a254fa82d7d6dfb09f1c1";
 
-let publicKey = "eb381db2398bd81e7738d7ca425f0cd2";
-let privateKey = "fec7ec85fed58c07a6d492cd9caf51f177a95b2e";
+// let publicKey = "eb381db2398bd81e7738d7ca425f0cd2";
+// let privateKey = "fec7ec85fed58c07a6d492cd9caf51f177a95b2e";
+let publicKey="9ab871748d83ae2eb5527ffd69e034de";
+let privateKey="ad79003cf7316d9bd72c6eda71d1c93d7e807e90"
+
 
 const InitialCharacters = ['1009610','1009664','1009220','1009351','1009187','1009268','1010743','1010802','1009718','1009407','1011358','1017111'];
 const API_ERROR = 'something went wrong';
@@ -54,7 +57,7 @@ const clearHeroesContainer = () => {
 
 const generateHeroCard = (name = '', image = '', id = '') => {
   const heroCard = document.createElement('div');
-  heroCard.classList.add('w-60', 'border', 'rounded-md', 'm-2', 'relative');
+  heroCard.classList.add('w-60', 'border', 'rounded-lg', 'm-2', 'relative', 'shadow-md');
   heroCard.style.backgroundColor = 'rgb(203, 203, 203)';
 
   heroCard.addEventListener('click', () => {
@@ -163,7 +166,6 @@ const fetchDetails = async (endPoint = '', id = '', search = null) => {
     const apiResponse = await fetch(!!search ? searchUrl : url)
     const result = await apiResponse.json();
 
-    if(result.data.results.length < 0) throw new Error(API_ERROR);
     return !!search ? result.data.results : result.data.results[0];
   } catch(err) {
     return { message: API_ERROR }

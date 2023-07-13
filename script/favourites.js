@@ -2,8 +2,10 @@
 // const privateKey = "13a5152a4108d079ad83ae4e766e26415557ba3b";
 // const publicKey = "6b415ae7675a254fa82d7d6dfb09f1c1";
 
-let publicKey = "eb381db2398bd81e7738d7ca425f0cd2";
-let privateKey = "fec7ec85fed58c07a6d492cd9caf51f177a95b2e";
+// let publicKey = "eb381db2398bd81e7738d7ca425f0cd2";
+// let privateKey = "fec7ec85fed58c07a6d492cd9caf51f177a95b2e";
+let publicKey="9ab871748d83ae2eb5527ffd69e034de";
+let privateKey="ad79003cf7316d9bd72c6eda71d1c93d7e807e90"
 
 const API_ERROR = 'something went wrong';
 
@@ -30,7 +32,7 @@ const toggleFavHero = (characterId) => {
 
 const generateHeroCard = (name = '', image = '', id = '') => {
   const heroCard = document.createElement('div');
-  heroCard.classList.add('w-60', 'bg-slate-50', 'border', 'rounded-md', 'm-2', 'relative');
+  heroCard.classList.add('w-60', 'bg-slate-50', 'border', 'rounded-md', 'm-2', 'relative','shadow-md');
 
   heroCard.addEventListener('click', () => {
     window.location.href = `../html/character.html?characterId=${id}`;

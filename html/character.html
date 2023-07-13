@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Character | Super Hero Hunter</title>
+    <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRImlmLHPry6SB9QCs4GoGZ9ckR8DLW3LoLWg&usqp=CAU"/>
+    <link rel="stylesheet" href="../css/index.css">
 
     <!-- tailwindcss -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -24,19 +26,19 @@
         class="flex justify-between items-center mb-10 py-2 container mx-auto"
       >
         <a href="index.html" class="text-xl uppercase text-red-800">
-          <iframe
-            src="https://gifer.com/embed/T21s"
-            width="200"
+          <img
+            src="../assests/T21s.gif"
+            width="100"
             height="80.320"
             frameborder="0"
-            allowfullscreen
-          ></iframe>
+           
+          />
         </a>
 
         <div class="flex items-center">
           <a class="ml-2" href="favourites.html"
-            ><i class="fa-regular fa-heart text-2xl" style="color: #d00312"></i
-          ></a>
+            ><img src="https://cdn-icons-png.flaticon.com/128/263/263417.png" class="w-6"/>
+          </a>
         </div>
       </nav>
     </div>
@@ -45,24 +47,25 @@
     <div class="container mx-auto">
       <div id="heroes-container" class=""></div>
 
-      <p class="text-2xl text-red-500 mt-5 mb-2">Comics</p>
+      <p class="text-3xl text-red-500 mt-5 mb-2 bg-red-50 rounded-2xl px-5 py-2">Comics</p>
       <div
         id="comics-container"
-        class="flex align-center flex-wrap overflow-y-scroll px-5"
+        class="flex align-center flex-wrap overflow-y-scroll px-5 my-8"
         style="max-height: 500px"
       ></div>
+      
 
-      <p class="text-2xl text-red-500 mt-5 mb-2">Events</p>
+      <p class="text-3xl text-red-500 mt-5 mb-2 bg-red-50 rounded-2xl px-5 py-2">Events</p>
       <div
         id="events-container"
-        class="flex align-center flex-wrap overflow-y-scroll px-5"
+        class="flex align-center flex-wrap overflow-y-scroll px-5 my-8"
         style="max-height: 500px"
       ></div>
 
-      <p class="text-2xl text-red-500 mt-5 mb-2">Series</p>
+      <p class="text-3xl text-red-500 mt-5 mb-2 bg-red-50 rounded-2xl px-5 py-2">Series</p>
       <div
         id="series-container"
-        class="flex align-center flex-wrap overflow-y-scroll px-5"
+        class="flex align-center flex-wrap overflow-y-scroll px-5 my-8"
         style="max-height: 500px"
       ></div>
     </div>
